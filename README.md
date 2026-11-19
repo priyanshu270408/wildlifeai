@@ -1,11 +1,12 @@
 # WILDSHIELD AI (wildomang)
 ### *Predict. Protect. Prevent.*
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpriyanshu270408%2Fwildlifeai&root-directory=frontend)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/priyanshu270408/wildlifeai)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.165-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB.svg?logo=react)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6.svg?logo=typescript)](https://www.typescriptlang.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.8-EE4C2C.svg?logo=pytorch)](https://pytorch.org)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC.svg?logo=tailwind-css)](https://tailwindcss.com)
 [![Status](https://img.shields.io/badge/Tests-9%2F9%20Passing-brightgreen.svg)]()
 
 > **WILDSHIELD AI** is an intelligent, connected early-warning and wildlife conservation ecosystem that reduces human-wildlife conflict by combining citizen sighting reports, computer vision animal recognition, historical incident analysis, explainable geospatial risk estimation, and coordinated field response alerts.
