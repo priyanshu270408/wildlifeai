@@ -34,6 +34,18 @@ def sanitize_database_url(raw_url: str) -> str:
             unquoted = urllib.parse.unquote(raw_pw)
             encoded_pw = urllib.parse.quote_plus(unquoted)
             url = f"{scheme}{user}:{encoded_pw}@{host_part}"
+            
+    # Driver compatibility: fallback to psycopg2 if psycopg (v3) is not present
+    try:
+        import psycopg  # noqa: F401
+    except ImportError:
+        try:
+            import psycopg2  # noqa: F401
+            if url.startswith("postgresql://") and not url.startswith("postgresql+"):
+                url = url.replace("postgresql://", "postgresql+psycopg2://", 1)
+        except ImportError:
+            pass
+
     return url
 
 db_url = sanitize_database_url(settings.DATABASE_URL)
