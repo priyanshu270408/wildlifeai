@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-surface-charcoal;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Leaflet Container Fixes */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  z-index: 10;
+}
+
+/* Custom Marker Styling */
+.custom-wildlife-marker {
+  background: transparent;
+  border: none;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #819087;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #123B2A;
+}
